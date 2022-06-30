@@ -564,6 +564,7 @@ add Age \& BMI & 11.63 & 11.56 & 11.53 & 11.50 & 11.52 & 11.51 \\
 add all three & 11.78 & 11.81 & 11.76 & 11.70 & 11.80 & 11.73 \\ 
    \hline
 \end{tabular}
+\caption{compare graphs add edges by bn.cv (wave 4 \& Estonia)}
 \label{tab:compare_edge_1}
 \end{table}
  
@@ -815,6 +816,7 @@ add LWNP \& DS \& HAM & 12.74 & 12.73 & 12.71 & 12.71 & 12.72 & 12.46 \\
 add VA \& DS \& HAM \&LWNP & 12.77 & 12.76 & 12.73 & 12.74 & 12.76 & 12.45 \\ 
    \hline
 \end{tabular}
+\caption{compare graphs add edges by bn.cv (multiple waves \& multiple countries)}
 \label{tab:compare_edge_2}
 \end{table}
  
@@ -850,23 +852,24 @@ Same as before, I compare three estimates based on prediction error. The estimat
 
  
  
- After that, I will discuss the nodes directed to DS, Age, and EDUL and their relationship. For DS: there are three nodes direct to DS, which are Sex, HAM, and NOD. We can see females are easier be depressed than males, and people who get more diseases or have more difficulty paying their household expenditures, tend to be depressed easily from figure \ref{fig:MB_of_AD_2_1}. For Age: Only country direct to Age.Different country has different age pattern from the figure \ref{fig:MB_of_AD_2_1}. For EDUL: there are also three nodes (Age, Sex, and country) direct to EDUL. We can see the elderly have lower education level, the male gets higher education level, and different country has a different pattern from the figure \ref{fig:MB_of_AD_2_1}. \\
+ After that, I will discuss the nodes directed to DS, Age, and EDUL and their relationship. For DS: there are three nodes direct to DS, which are HAM, NOD and Sex. We can see females are easier be depressed than males, and people who get more diseases or have more difficulty paying their household expenditures, tend to be depressed easily from figure \ref{fig:MB_of_AD_2_1}. For Age: Only country direct to Age.Different country has different age pattern from the figure \ref{fig:MB_of_AD_2_1}. For EDUL: there are also three nodes (country, Age, and Sex) direct to EDUL. We can see the elderly have lower education level, the male gets higher education level, and different country has a different pattern from the figure \ref{fig:MB_of_AD_2_1}. \\
  
  \begin{figure}[!ht]
 \includegraphics[width=0.5\textwidth]{MSc_LaTeX_SwDS/DS_2_1.png}
 \includegraphics[width=0.5\textwidth]{MSc_LaTeX_SwDS/DS_2_2.png}
 \includegraphics[width=0.4\textwidth]{MSc_LaTeX_SwDS/Age_2.png}
-\caption{Markov blanket variables of AD}
+\caption{Markov blanket variables of AD\_1. Variables for DS are HAM, NOD and Sex (Top to bottom). Variable for Age is country.}
 \label{fig:MB_of_AD_2_1}
 \end{figure} 
  
  \begin{figure}[!ht]
 \includegraphics[width=0.8\textwidth]{MSc_LaTeX_SwDS/EDUL_2_1.png}
 \includegraphics[width=0.8\textwidth]{MSc_LaTeX_SwDS/EDUL_2_2.png}
-\caption{Markov blanket variables of AD}
+\caption{Markov blanket variables of AD\_2. Variables for EDUL are country, Age, and Sex (Top to bottom)}
 \label{fig:MB_of_AD_2_2}
 \end{figure} 
 
+\clearpage
  For diagnosis, we can see all the points are near the line, and the confidence intervals of these points pass through the line excluded at the tail of the line in the calibration plot. Therefore, it is a valuable overall calibration plot base on the article written by Stevens et al. \cite{stevens2020validation}. For the ROC curve, it is beyond the $y=x$ line, which means the predicted model is better than the random pick according to Hajian \cite{hajian2013receiver}. Furthermore, the area under the curve (AUC) is $0.8028$, which is reasonable. The diagnoses seem fine for the estimate.\\
 
   \begin{figure}[!ht]
